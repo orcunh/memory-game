@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "minChar": "Must be min {{min}} characters or more",
+    "required": "Required"
+  },
+  "login": {
+    "header": "Memory Game",
+    "placeholder": "Your name",
+    "button": "Start Game"
+  },
+  "game": {
+    "welcome": "Hi {{user}},\n match the flags.",
+    "changeUser": "Change user",
+    "shuffleCards": "Restart",
+    "congratulations": "Congratulations!",
+    "successMessage": "All flags are matched.",
+    "goScoreBoard": "Go to Score Board",
+    "scoreBoard": "Score board"
+  },
+  "scoreBoard": {
+    "title": "Memory Game Score Board",
+    "playAgain": "Play again",
+    "user": "User",
+    "score": "Score",
+    "noScore": "No Score",
+    "info": "The number of card flipping is shown in the score. The lowest is the best ranking."
+  }
+}
