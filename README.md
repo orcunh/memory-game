@@ -1,6 +1,6 @@
 ## Memory Game
 
-Demo link: https://game.flextechlondon.co.uk/
+Demo link: [https://game.flextechlondon.co.uk](https://game.flextechlondon.co.uk)
 
 - React
 - Redux
