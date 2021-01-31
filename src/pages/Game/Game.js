@@ -16,11 +16,22 @@ import {
   resetGame,
 } from '../../app/gameSlice';
 
-import { StyledGame, StyledGrid, StyledWrapper, StyledButtons } from './Game.styles';
+import {
+  StyledGame,
+  StyledGrid,
+  StyledWrapper,
+  StyledButtons,
+  StyledLangSelect,
+} from './Game.styles';
+
+const langOptions = [
+  { key: 'tr', value: 'tr', text: 'Turkce' },
+  { key: 'en', value: 'en', text: 'English' },
+];
 
 export const GamePage = () => {
   const history = useHistory();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [flippedCards, setFlippedCards] = useState([]);
 
@@ -80,12 +91,19 @@ export const GamePage = () => {
     history.push('/score-board');
   }, [dispatch, history]);
 
+  const handleLangChange = useCallback(
+    (e, { value }) => {
+      i18n.changeLanguage(value);
+    },
+    [i18n]
+  );
+
   if (!cards) return null;
 
   return (
     <StyledGame>
       <StyledWrapper>
-        <Header as="h2" color="blue" textAlign="center">
+        <Header as="div" color="blue" textAlign="center">
           {t('game.welcome', { user: userName })}
         </Header>
         <StyledButtons>
@@ -98,6 +116,13 @@ export const GamePage = () => {
           <Button as={Link} to="/score-board" size="mini">
             {t('game.scoreBoard')}
           </Button>
+        </StyledButtons>
+        <StyledButtons>
+          <StyledLangSelect
+            onChange={handleLangChange}
+            options={langOptions}
+            defaultValue={i18n.language.substring(0, 2)}
+          />
         </StyledButtons>
         <StyledGrid>
           {cards.map((card) => (

@@ -11,7 +11,7 @@
   "game": {
     "welcome": "Selam {{user}}, bayraklari eslestir.",
     "changeUser": "Kullaniciyi degistir",
-    "shuffleCards": "Kartlari tekrar dagit",
+    "shuffleCards": "Tekrar baslat",
     "congratulations": "Tebrikler!",
     "successMessage": "Tum bayraklari eslestirdin.",
     "goScoreBoard": "Skor Tahtasina Git",

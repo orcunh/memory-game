@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Select } from 'semantic-ui-react';
 
 const spacer = '16px';
 
@@ -33,4 +34,16 @@ export const StyledWrapper = styled.div`
 export const StyledButtons = styled.div`
   text-align: center;
   margin-bottom: ${spacer};
+`;
+
+export const StyledLangSelect = styled(Select)`
+  &.ui.selection.dropdown {
+    line-height: 4px;
+    min-height: 10px;
+    min-width: 100px;
+
+    & > .dropdown.icon {
+      padding: 6px;
+    }
+  }
 `;
