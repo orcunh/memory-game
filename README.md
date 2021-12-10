@@ -2,6 +2,13 @@
 
 Demo: https://codesandbox.io/s/github/orcunh/memory-game/tree/master/
 
+- React
+- Redux
+- Formik
+- i18next
+- Styled components
+- React router
+
 ### Task details
 
 - Can you develop a 3-page mini-memory game by targeting mobile and desktop browser with React & redux?<br />
@@ -15,13 +22,3 @@ Requirements:<br />
 
 Extras:<br />
 - To start the game, select username on the first page and create your scoreboard using these procedures on the last page.<br />
-
-
-
-
-- React
-- Redux
-- Formik
-- i18next
-- Styled components
-- React router
